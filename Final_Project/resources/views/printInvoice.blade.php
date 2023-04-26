@@ -34,6 +34,12 @@
         {{-- item_id --}}
         <input type="hidden" name='item_id' value="{{ $item->id }}">
 
+        {{-- Stock --}}
+        <div>
+            <br>
+            <p>Stock: {{ $item->quantity }}</p>
+        </div>
+        
         {{-- Quantity --}}
         <div>
             <br>
@@ -66,8 +72,8 @@
             <br>
             <input type="hidden" name='price' id="priceInput" value="{{ $item->price }}">
             <p>Price: Rp. {{ $item->price }}</p>
-        </div>  
-        
+        </div> 
+
         {{-- Total Price --}}
         <div>
             <br>
